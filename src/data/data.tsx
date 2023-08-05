@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Mark Dasco Profile',
+  description: "Mark Dasco's profile page",
 };
 
 /**
@@ -55,7 +55,7 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Portfolio: ' ',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
@@ -69,24 +69,21 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Dasco.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm an Australian Sydney based <strong className="text-stone-100">Software Engineering Leader</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me playing <strong className="text-stone-100">Tennis</strong>,
+        coaching <strong className="text-stone-100">badminton</strong>, or simply hanging out with the wife and kids.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +101,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hi! I'm Dasco, Mark Dasco to be exact, but everyone just calls me by my last name - Dasco. I'm a software engineering leader with over 20 years in the Software
+  Industry. \n During my time, I've evolved from cutting code (which I still do in my spare time) towards building awesome engineering cultures. Whether it's small pizza-sized teams
+  or multiple teams spanning a department, my core beliefs endure: culture eats strategy for breakfast, quality matters and if nothing changes - nothing changes.
+  `,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Sydney, NSW Australia', Icon: MapIcon},
+    {label: 'Nationality', text: 'Australian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Tennis, Badminton, Chess, Poker', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Technology Sydney', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Looking for next opportunity', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,70 +119,70 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Leadership',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'Engineering Strategy',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
+        name: 'Scale',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Thought Leadership',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Technical Skills',
+    skills: [
+      {
+        name: 'Distributed Architectures',
+        level: 9,
       },
       {
-        name: 'Golang',
+        name: '.net C# Development',
+        level: 7.5,
+      },
+      {
+        name: 'Node/React',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Methodologies',
     skills: [
       {
-        name: 'React Native',
+        name: 'Scrum',
+        level: 10,
+      },
+      {
+        name: 'Kanban',
+        level: 8,
+      },
+      {
+        name: 'Waterfall',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Communication',
+    skills: [
+      {
+        name: 'Coaching & Mentoring',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Inspiration',
+        level: 6,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Facilitation',
+        level: 7,
       },
     ],
   },
@@ -198,67 +195,67 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url:'',
     image: porfolioImage1,
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: '',
     image: porfolioImage11,
   },
 ];
@@ -268,39 +265,70 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Jun 2004',
+    location: 'University of Technology Sydney',
+    title: 'Bachelors Degree in Software Engineering Diploma in Engineering Practice',
+    content: <p>Learnt the difference between being just a coder vs being an engineer, to create software that endures!</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Jun 2004',
+    location: 'University of Technology Sydney',
+    title: 'Bachelor of Business in Finance',
+    content: <p>Learnt all about applied finance as it relates to the corporate world. Didn't end up using it :-).</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Sep 2019 - Aug 2023',
+    location: 'Elmo Software',
+    title: 'Head of Engineering',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+         Oversee strategic and operational initiatives for ELMO's R&D Engineering team, consisting of 80 - 90 
+         onshore and offshore engineers distributed across 12+ scrum teams. Accountable for rapid and sustainable, technical delivery of 
+         outcomes alongside contemporary engineering processes and practices. Setup the engineering department to operate at scale in terms of people, process
+         and technology.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Jun 2016 - Sep 2019',
+    location: 'nib Travel',
+    title: 'Head of Software Development and Applications',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+         Management oversight across 4 development teams and application support team, consisting of 25-30 Permanent Headcount and pool of contractors (5-10).
+         Motivate teams and create a strong culture of engineering excellence and continuous improvement. Responsible for the development and execution 
+         of 3-5 year cloud-first strategic direction. Act in a technical and process leadership role, mentoring and coaching teams, leaders and individuals 
+         towards successful delivery.
+      </p>
+    ),
+  },
+  {
+    date: 'Apr 2014 – Jun 2016',
+    location: 'World Nomads Group',
+    title: 'Software Development Manager',
+    content: (
+      <p>
+         Adopted and implemented agile development best-practices across several development teams. Enacted CI/CD and Continous 
+         Improvement, cultivated product and technical backlogs, whilst also addressing technical debt. Maintained a continued hands on approach
+         with key responsibility collaborating with development teams and chief architect to validate and approve designs and implementation ensuring 
+         they fall in-line with the overall solution and enterprise architecture.
+      </p>
+    ),
+  },
+  {
+    date: 'Apr – Apr 2014',
+    location: 'World Nomads Group',
+    title: 'Team Lead Software Developer',
+    content: (
+      <p>
+        Responsible for teams delivering high quality code and setting the standard for development teams to follow. 
+        Assessing new technologies and providing technical leadership when necessary.
+        Key technologies involved: .Net 4.0, C# ASP .net MVC 3.5, ASP .net, Entity Framework, Angular JS\,
+        Selenium, Sass, NUnit, Unity 2.0, TFS 2013, Jira, Confluence, Sql Server 2014 Database, Reporting
+        Services, Analysis Services, Octopus Deploy, RabbitMq, M-Files, Puppet Enterprise. 
       </p>
     ),
   },
@@ -313,19 +341,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Faraz Ali Zuberi',
+      text: 'Dasco has been one of the most influential and inspiring mentors at ELMO. As Head of Engineering, he\'s overseen a complete transformation of ELMO\'s R&D department with strong focus on high quality engineering. Following his vision, our autonomous teams went from monolith to microservices, introduced trunk-based development, upgraded legacy systems and built critical platform tools that will service our R&D for years to come. He is an excellent communicator and a patient listener. His knack for bringing teams together has seen our department overcome many challenges. He introduced OKRs at ELMO to achieve sustained and measurable outcomes. He\'s proven to be a capable, versatile and transformational leader and his tenacity and vision can take any organization to new heights.',
+      image: 'https://media.licdn.com/dms/image/C4D03AQHGfdSopoRs9A/profile-displayphoto-shrink_200_200/0/1516484293739?e=1696464000&v=beta&t=zVpeor38LZMBZbPasiO-LZoeaedEAn9JsTpF9Mw47-I',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Dinesh Gurram',
+      text: 'Damn he\'s good.',
+      image: 'https://media.licdn.com/dms/image/C5103AQHnee3_0hkr_g/profile-displayphoto-shrink_100_100/0/1552312238708?e=1696464000&v=beta&t=GF2_hhme6ViMoKsowzESfHLmu3BjYnBRsmKMaKVKBHAhttps://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Samuel Sun',
+      text: 'ToDo',
+      image: 'https://www.linkedin.com/in/samuel-sun-sydney?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAH3deEB99_p3FHsykjdZLgi1huOQKKbKTA&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BhrRQiV3sSximsT%2FuaeTFXg%3D%3D',
     },
   ],
 };
@@ -336,27 +364,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Best way to get in touch is to reach out via email!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'm.dasco@gmail.com',
+      href: 'mailto:m.dasco@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Sydney, Australia',
+      href: 'https://www.google.com/maps/d/viewer?mid=1Pqm2ziDxO5YoYzFGoqlBoDxTBCs&hl=en&ll=-33.873760049174415%2C151.20918965&z=12',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'mldasco',
+      href: 'https://github.com/mldasco',
     },
   ],
 };
@@ -365,9 +388,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/mldasco'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://au.linkedin.com/in/mark-dasco-26b7855/'},
 ];

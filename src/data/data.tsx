@@ -73,10 +73,12 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an Australian Sydney based <strong className="text-stone-100">Software Engineering Leader</strong>
+        I'm an Australian Sydney based <strong className="text-stone-100">Software Engineering Leader</strong> with over 20 years experience in the software industry and 
+        specialisations in HR Tech, Travel Tech, Insurance, Gaming and Finance. I'm a big believer that creating well-engineered software solutions is primarily a 
+        people problem, hence my philosophy is great tech requires the right people operating in the right culture.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me playing <strong className="text-stone-100">Tennis</strong>,
+        In my free time time, you can catch me playing <strong className="text-stone-100">tennis</strong>,
         coaching <strong className="text-stone-100">badminton</strong>, or simply hanging out with the wife and kids.
       </p>
     </>

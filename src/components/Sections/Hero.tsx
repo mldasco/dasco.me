@@ -43,7 +43,7 @@ const Hero: FC = memo(() => {
             </div>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-6 flex justify-center">
+        <div className="absolute inset-x-10 bottom-20 flex justify-center">
           <a
             className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
             href={`/#${SectionId.About}`}>

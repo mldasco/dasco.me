@@ -270,7 +270,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Organisational Redesigns',
-    description: `Towards functional/cross-functional/product/capability/platform/value-stream-based teams, you name it, I've seen it. I've often been the catalyst for multiple organisational redesigns that strongly aligns business and customer outcomes to how teams operate and what they are responsible for.
+    description: `Towards functional, cross-functional, product, capability, platform, value-stream-based teams, you name it, I've seen it. I've often been the catalyst for multiple organisational redesigns that strongly aligns business and customer outcomes to how teams operate and what they are responsible for.
     Org changes are HARD and incredibly disruptive. Without the buy-in from our people on the ground, and clear unambigous roles and responsibilities at an individual and team level, it simply doesn't work.
     I find that over-communicating a clear rationale, accepting and inviting the need for feedback and iteration, as well as identifying and utilising champions are key factors in successful org restructures`,
 

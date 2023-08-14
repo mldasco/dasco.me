@@ -71,19 +71,20 @@ const linkRef = useRef<HTMLAnchorElement>(null);
   
 
   return (
+    <div>
     <a
       className={classNames(
         'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 ', 
-        {'opacity-0 hover:opacity-100 hover:z-20': isMobile},
-        {'opacity-0 hover:opacity-95 z-20': !isMobile},
-        
+        {'opacity-0 hover:opacity-80 z-50 hover:z-50': isMobile},
+        {'opacity-0 hover:opacity-80 z-20': !isMobile},
       )}
       href={url}
       onClick={handleItemClick}
       ref={linkRef}
       >
-      {showModal? (
-      <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 outline-none focus:outline-none">
+    </a>
+    {showModal? (
+      <div className="opacity-100 flex justify-center items-center fixed inset-0 z-50">
   	    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-1/2 bg-white outline-none focus:outline-none ">
 	        <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
 		        <h3 className="text-3xl font=semibold">{title}</h3>
@@ -96,6 +97,6 @@ const linkRef = useRef<HTMLAnchorElement>(null);
           </div>    
         </div>
       </div>):null}
-    </a>
+    </div>
   );
 });

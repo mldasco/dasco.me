@@ -73,9 +73,9 @@ const linkRef = useRef<HTMLAnchorElement>(null);
   return (
     <a
       className={classNames(
-        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 z-20 ', 
+        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 hover:z-20 ', 
         {'opacity-0 hover:opacity-100': isMobile},
-        {'opacity-0 hover:opacity-95': !isMobile},
+        {'opacity-0 hover:opacity-90': !isMobile},
         
       )}
       href={url}

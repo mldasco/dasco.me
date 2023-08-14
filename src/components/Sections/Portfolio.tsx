@@ -40,16 +40,9 @@ Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
 const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
-const [mobile, setMobile] = useState(false);
 const [showModal, setShowModal] = useState(false);
 const linkRef = useRef<HTMLAnchorElement>(null);
 
-  useEffect(() => {
-    // Avoid hydration styling errors by setting mobile in useEffect
-    if (isMobile) {
-      setMobile(true);
-    }
-  }, []);
 
   useDetectOutsideClick(linkRef, () => setShowModal(false));
 
@@ -57,12 +50,8 @@ const linkRef = useRef<HTMLAnchorElement>(null);
     (event: MouseEvent<HTMLElement>) => {
       setShowModal(!showModal)
       event.preventDefault();
-       if (mobile && !showModal) {
-         event.preventDefault();
-         setShowModal(!showModal);
-       }
     },
-    [mobile, showModal],
+    [showModal],
   );
   
   function SplitDescription() {
@@ -73,9 +62,7 @@ const linkRef = useRef<HTMLAnchorElement>(null);
   return (
     <a
       className={classNames(
-        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 z-50', 
-        {'opacity-0 hover:opacity-90': !mobile},
-        
+        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 z-20 opacity-0 hover:opacity-90'
       )}
       href={url}
       onClick={handleItemClick}

@@ -13,7 +13,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8 ">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my achievements, highlights and philosophy</h2>
+        <h2 className="self-center text-xl font-bold text-white">Check out some of my experiences, highlights and philosophy</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4 ">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
@@ -47,7 +47,7 @@ const linkRef = useRef<HTMLAnchorElement>(null);
   useEffect(() => {
     // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
-      setMobile(false);
+      setMobile(true);
     }
   }, []);
 
@@ -73,8 +73,9 @@ const linkRef = useRef<HTMLAnchorElement>(null);
   return (
     <a
       className={classNames(
-        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 z-20', 
-        {'opacity-10 hover:opacity-90': !mobile},
+        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 z-20 ', 
+        {'opacity-0 hover:opacity-100': isMobile},
+        {'opacity-0 hover:opacity-95': !isMobile},
         
       )}
       href={url}
@@ -88,8 +89,8 @@ const linkRef = useRef<HTMLAnchorElement>(null);
 		        <h3 className="text-3xl font=semibold">{title}</h3>
             <button className="bg-transparent border-0 text-black float-right"onClick={() => setShowModal(false)}></button>
 	      </div>
-          <div className="relative p-3 flex-auto z-10">
-            <label className="block text-black text-sm font-bold mb-1 z-0">
+          <div className="relative p-3 flex-auto ">
+            <label className="block text-black text-sm font-bold mb-1 ">
               <SplitDescription/>
             </label>
           </div>    

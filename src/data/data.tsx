@@ -307,13 +307,13 @@ export const experience: TimelineItem[] = [
   {
     date: 'Sep 2019 - Aug 2023',
     location: 'Elmo Software',
-    title: 'Head of Engineering',
+    title: 'Head of Engineering / Engineering Manager',
     content: (
       <p>
          Oversee strategic and operational initiatives for ELMO's R&D Engineering team, consisting of 80 - 90 
-         onshore and offshore engineers distributed across 12+ scrum teams. Accountable for rapid and sustainable, technical delivery of 
-         outcomes alongside contemporary engineering processes and practices. Setup the engineering department to operate at scale in terms of people, process
-         and technology.
+         onshore and offshore engineers distributed across 12+ scrum teams. Concurrently acted as an Engineering Manager for 2 scrum teams. 
+         Accountable for rapid and sustainable, technical delivery of outcomes alongside contemporary engineering processes and practices. 
+         Setup the engineering department to operate at scale in terms of people, process and technology.
       </p>
     ),
   },
@@ -323,7 +323,7 @@ export const experience: TimelineItem[] = [
     title: 'Head of Software Development and Applications',
     content: (
       <p>
-         Management oversight across 4 development teams and application support team, consisting of 25-30 Permanent Headcount and pool of contractors (5-10).
+         Management oversight across 4 development teams and an application support team, consisting of 25-30 Permanent Headcount and pool of contractors (5-10).
          Motivate teams and create a strong culture of engineering excellence and continuous improvement. Responsible for the development and execution 
          of 3-5 year cloud-first strategic direction. Act in a technical and process leadership role, mentoring and coaching teams, leaders and individuals 
          towards successful delivery.

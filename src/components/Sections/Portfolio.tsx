@@ -1,9 +1,8 @@
 //import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import {FC, memo, MouseEvent, useCallback, useRef, useState} from 'react';
 
-import {isMobile} from '../../config';
 import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
@@ -39,61 +38,46 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
-const [mobile, setMobile] = useState(false);
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, description}}) => {
 const [showModal, setShowModal] = useState(false);
 const linkRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    // Avoid hydration styling errors by setting mobile in useEffect
-    if (isMobile) {
-      setMobile(true);
-    }
-  }, []);
-
+  
   useDetectOutsideClick(linkRef, () => setShowModal(false));
 
-  const handleItemClick = useCallback(
+  const handleMouseOnEnter = useCallback(
     (event: MouseEvent<HTMLElement>) => {
       setShowModal(!showModal)
       event.preventDefault();
-       if (mobile && !showModal) {
-         event.preventDefault();
-         setShowModal(!showModal);
-       }
     },
-    [mobile, showModal],
+    [showModal],
   );
+
   
   function SplitDescription() {
     return description.split('\n').map(str => <p className="pt-1">{str}</p>);
   }
-  
 
   return (
     <div>
-    <a
-      className={classNames(
-        'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 ', 
-        {'opacity-0 hover:opacity-80 z-50 hover:z-50': isMobile},
-        {'opacity-0 hover:opacity-80 z-20': !isMobile},
-      )}
-      href={url}
-      onClick={handleItemClick}
-      ref={linkRef}
-      >
-    </a>
+      <a
+        className={classNames(
+          'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 opacity-0 hover:opacity-80 z-50 hover:z-50', 
+        )}
+        onClick={handleMouseOnEnter}
+        onMouseEnter={handleMouseOnEnter}
+        
+        ref={linkRef}>
+      </a>  
     {showModal? (
       <div className="opacity-100 flex justify-center items-center fixed inset-0 z-50">
-  	    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-1/2 bg-white outline-none focus:outline-none ">
+  	    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-2/3 bg-white outline-none focus:outline-none  ">
 	        <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-		        <h3 className="text-3xl font=semibold">{title}</h3>
-            <button className="bg-transparent border-0 text-black float-right"onClick={() => setShowModal(false)}></button>
-	      </div>
-          <div className="relative p-3 flex-auto ">
-            <label className="block text-black text-sm font-bold mb-1 ">
+		        <h3 className="text-3xl font=semibold">{title}</h3>  
+	        </div>
+          <div className="relative p-3 flex-auto overscroll-auto">
+            <form className="block text-black text-sm font-bold mb-1 ">
               <SplitDescription/>
-            </label>
+            </form>
           </div>    
         </div>
       </div>):null}

@@ -202,7 +202,6 @@ export const portfolioItems: PortfolioItem[] = [
     Whether dealing with microservices or monoliths, this is a non-negotiable. 
     With modern approaches such as trunk-based development, feature flagging and backwards compatible DB migrations, alongside key technologies like K8s, Jenkins etc, with hard work - I've found it's always possible!
     I've lead multiple teams and organisations on complex projects that have reduced release cycle times from monthly deploys to multiple deploys per day!`,
-    url:'',
     image: porfolioImage1,
   },
   {
@@ -210,14 +209,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: `As a software leader, it's been a great privilege for me to coach and mentor staff under my remit to grow and develop to be their own leaders.
     From engineering managers to heads of departments, tech leads to architects and junior devs to senior devs, I'm proud of a track record of empowering and growing more leaders.
     A key philosophy I mention to team members I coach/mentor, "We're not here to keep you, we're here to make you ready for your next role."`,
-    url: '',
     image: porfolioImage2,
   },
   {
     title: 'Data-informed Cultures',
     description: `Whether it's a sweeping change to introduce OKRs to the organisation, tracking key departmental metrics, or simply making it a habit to review key metrics during retrospectives within teams, I lean heavily towards data-informed decisions.
     I have clear track record in empowering and enabling teams with data. Time and time again I've found it leads to better ideas, ensures buy-in from stakeholders and biases individuals and teams towards action.`,
-    url: '',
     image: porfolioImage3,
   },
   {
@@ -225,31 +222,25 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Enabling and measuring Developer Productivity is a very tricky problem I've always wanted to solve. An engaged and productive work-force can be the difference towards successful result-driven teams.
     I've introduced frameworks, such as SPACE and DevXP to get better measures and a better handle on productivity on the ground. I've found that a focus on flow, reducing cognitive load and faster feedback loops to be the key determinants of developer productivity.
     I've managed to push through multiple initiatives to improve developer productivity such as Focus-Time, no meeting days, root-cause analysis of developer pain points, as well as commencing the introduction of AI into the developer experience.`,
-    url: '',
     image: porfolioImage4,
   },
   {
     title: 'Microservice Migrations',
     description: `I've had numerous experiences with monolith to microservice re-platforms during my career, both as an engineer and as a software leader. I've seen great success but also several failures.
     These migrations can be extremely difficult and are fraught with complexity. Over the years, I've become less dogmatic and have leant towards pragmatism and simplicity in making these decisions.
-    I encourage teams to carefully scrutinise their need for these migrations. Data integrity, engineering experience and operational concerns are often overlooked in making these assessments.
-    `,
-    url: '',
+    I encourage teams to carefully scrutinise their need for these migrations. Data integrity, engineering experience and operational concerns are often overlooked in making these assessments.`,
     image: porfolioImage5,
   },
   {
     title: 'Offshore Dev Hubs',
     description:  `I've had multiple experiences in setting up and operating overseas development hubs (Ukraine & the Philippines), hiring offshore developers to augment local on-shore capabilities. Although, not without its challenges, such as timezone and cultural differences, I've proven every time that the model works.
     I've found that ensuring we treat off-shore staff equally, embedding within teams, investing in their growth and over-communicating as the key determinating factors for success!`,
-    url: '',
     image: porfolioImage6,
   },
   {
     title: 'Budgets and Cents',
     description: `I've often been charged with both CAPEX and OPEX budgets for teams and departments. This responsibility can range into the millions, as such, careful consideration as to how the invesment is spent requires a great deal of thought and consideration.
-    Allocating resource and investment is often a non-trivial exercise, and has direct impact on the bottom line, but also team morale and engagement. My philosophy when it comes to budgets and resource allocation, is one centred on long term ROI and global optimisation.
-    `,
-    url: '',
+    Allocating resource and investment is often a non-trivial exercise, and has direct impact on the bottom line, but also team morale and engagement. My philosophy when it comes to budgets and resource allocation, is one centred on long term ROI and global optimisation.`,
     image: porfolioImage7,
   },
   {
@@ -257,7 +248,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: `From hiring to offboarding, a key emphasis I've focused on lately is the overall employee experience.
     At the recruitment phase, my aim is to create advocates for the company whether candidates are successful or not. With the right tooling, we ensure that our people have an excellent onboarding experience and contribute within their teams as quickly as possible. 
     During their time with the company, staff should be engaged, empowered and productive. They should have a clear picture of what success looks like and have unambigous career pathways within the organisation.`,
-    url: '',
     image: porfolioImage8,
   },
   {
@@ -265,7 +255,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: `After obtaining my BWF (Badminton World Federation) Coaching credentials in 2015, I went on to coach several juniors to win the Australian Junior National Championships 3 years in a row!
     I continue to coach juniors and adults, although more for social play in a less competitive environment.
     I also run a community social badminton club, which has been going strong for over 15 years.`,
-    url: '',
     image: porfolioImage9,
   },
   {
@@ -273,8 +262,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: `Towards functional, cross-functional, product, capability, platform, value-stream-based teams, you name it, I've seen it. I've often been the catalyst for multiple organisational redesigns that strongly aligns business and customer outcomes to how teams operate and what they are responsible for.
     Org changes are HARD and incredibly disruptive. Without the buy-in from our people on the ground, and clear unambigous roles and responsibilities at an individual and team level, it simply doesn't work.
     I find that over-communicating a clear rationale, accepting and inviting the need for feedback and iteration, as well as identifying and utilising champions are key factors in successful org restructures`,
-
-    url: '',
     image: porfolioImage10,
   },
   {
@@ -283,7 +270,6 @@ export const portfolioItems: PortfolioItem[] = [
     These lambda functions are invoked via webhooks and used to control IOT locks and IOT light switches via API or SMS commands.
     All in all, the customer receives lock-codes to the padlock via SMS before their booking commences and lights automatically turn on at the right time if they have a night booking.
     Check it out at www.qhponds.tennis`,
-    url: '',
     image: porfolioImage11,
   },
 ];

@@ -73,13 +73,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an Australian Sydney based <strong className="text-stone-100">Software Engineering Leader</strong> with over 20 years experience in the software industry and 
-        specialisations in HR Tech, Travel Tech, Insurance, Gaming and Finance. I'm a big believer that creating well-engineered software solutions is primarily a 
-        people problem, hence my philosophy that great tech requires the right people operating in the right culture.
+        I'm an Australian Sydney based <strong className="text-stone-100">Software Engineering Leader</strong> with over
+        20 years experience in the software industry and specialisations in HR Tech, Travel Tech, Insurance, Gaming and
+        Finance. I'm a big believer that creating well-engineered software solutions is primarily a people problem,
+        hence my philosophy that great tech requires the right people operating in the right culture.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me playing <strong className="text-stone-100">tennis</strong>,
-        coaching <strong className="text-stone-100">badminton</strong>, or simply hanging out with the wife and kids.
+        In my free time time, you can catch me playing <strong className="text-stone-100">tennis</strong>, coaching{' '}
+        <strong className="text-stone-100">badminton</strong>, or simply hanging out with the wife and kids.
       </p>
     </>
   ),
@@ -233,7 +234,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Offshore Dev Hubs',
-    description:  `I've had multiple experiences in setting up and operating overseas development hubs (Ukraine & the Philippines), hiring offshore developers to augment local on-shore capabilities. Although, not without its challenges, such as timezone and cultural differences, I've proven every time that the model works.
+    description: `I've had multiple experiences in setting up and operating overseas development hubs (Ukraine & the Philippines), hiring offshore developers to augment local on-shore capabilities. Although, not without its challenges, such as timezone and cultural differences, I've proven every time that the model works.
     I've found that ensuring we treat off-shore staff equally, embedding within teams, investing in their growth and over-communicating as the key determinating factors for success!`,
     image: porfolioImage6,
   },
@@ -279,7 +280,9 @@ export const education: TimelineItem[] = [
     date: 'Jun 2004',
     location: 'University of Technology Sydney',
     title: 'Bachelors Degree in Software Engineering Diploma in Engineering Practice',
-    content: <p>Learnt the difference between being just a coder vs being an engineer, to create software that endures!</p>,
+    content: (
+      <p>Learnt the difference between being just a coder vs being an engineer, to create software that endures!</p>
+    ),
   },
   {
     date: 'Jun 2004',
@@ -296,10 +299,11 @@ export const experience: TimelineItem[] = [
     title: 'Head of Engineering / Engineering Manager',
     content: (
       <p>
-         Oversee strategic and operational initiatives for ELMO's R&D Engineering team, consisting of 80 - 90 
-         onshore and offshore engineers distributed across 12+ scrum teams. Concurrently acted as an Engineering Manager for 2 scrum teams. 
-         Accountable for rapid and sustainable, technical delivery of outcomes alongside contemporary engineering processes and practices. 
-         Setup the engineering department to operate at scale in terms of people, process and technology.
+        Oversee strategic and operational initiatives for ELMO's R&D Engineering team, consisting of 80 - 90 onshore and
+        offshore engineers distributed across 12+ scrum teams. Concurrently acted as an Engineering Manager for 2 scrum
+        teams. Accountable for rapid and sustainable, technical delivery of outcomes alongside contemporary engineering
+        processes and practices. Setup the engineering department to operate at scale in terms of people, process and
+        technology.
       </p>
     ),
   },
@@ -309,10 +313,11 @@ export const experience: TimelineItem[] = [
     title: 'Head of Software Development and Applications',
     content: (
       <p>
-         Management oversight across 4 development teams and an application support team, consisting of 25-30 Permanent Headcount and pool of contractors (5-10).
-         Motivate teams and create a strong culture of engineering excellence and continuous improvement. Responsible for the development and execution 
-         of 3-5 year cloud-first strategic direction. Act in a technical and process leadership role, mentoring and coaching teams, leaders and individuals 
-         towards successful delivery.
+        Management oversight across 4 development teams and an application support team, consisting of 25-30 Permanent
+        Headcount and pool of contractors (5-10). Motivate teams and create a strong culture of engineering excellence
+        and continuous improvement. Responsible for the development and execution of 3-5 year cloud-first strategic
+        direction. Act in a technical and process leadership role, mentoring and coaching teams, leaders and individuals
+        towards successful delivery.
       </p>
     ),
   },
@@ -322,10 +327,11 @@ export const experience: TimelineItem[] = [
     title: 'Software Development Manager',
     content: (
       <p>
-         Adopted and implemented agile development best-practices across several development teams. Enacted CI/CD and Continous 
-         Improvement, cultivated product and technical backlogs, whilst also addressing technical debt. Maintained a continued hands on approach
-         with key responsibility collaborating with development teams and chief architect to validate and approve designs and implementation ensuring 
-         they fall in-line with the overall solution and enterprise architecture.
+        Adopted and implemented agile development best-practices across several development teams. Enacted CI/CD and
+        Continous Improvement, cultivated product and technical backlogs, whilst also addressing technical debt.
+        Maintained a continued hands on approach with key responsibility collaborating with development teams and chief
+        architect to validate and approve designs and implementation ensuring they fall in-line with the overall
+        solution and enterprise architecture.
       </p>
     ),
   },
@@ -335,12 +341,11 @@ export const experience: TimelineItem[] = [
     title: 'Team Lead Software Developer',
     content: (
       <p>
-        Responsible for teams delivering high quality code and setting the standard for development teams to follow. 
-        Assessing new technologies and providing technical leadership when necessary.
-        
-        Key technologies involved: .Net 4.0, C# ASP .net MVC 3.5, ASP .net, Entity Framework, Angular JS\,
-        Selenium, Sass, NUnit, Unity 2.0, TFS 2013, Jira, Confluence, Sql Server 2014 Database, Reporting
-        Services, Analysis Services, Octopus Deploy, RabbitMq, M-Files, Puppet Enterprise. 
+        Responsible for teams delivering high quality code and setting the standard for development teams to follow.
+        Assessing new technologies and providing technical leadership when necessary. Key technologies involved: .Net
+        4.0, C# ASP .net MVC 3.5, ASP .net, Entity Framework, Angular JS\, Selenium, Sass, NUnit, Unity 2.0, TFS 2013,
+        Jira, Confluence, Sql Server 2014 Database, Reporting Services, Analysis Services, Octopus Deploy, RabbitMq,
+        M-Files, Puppet Enterprise.
       </p>
     ),
   },
@@ -354,18 +359,21 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Faraz Ali Zuberi (Solutions Architect)',
-      text: 'Dasco has been one of the most influential and inspiring mentors at ELMO. As Head of Engineering, he\'s overseen a complete transformation of ELMO\'s R&D department with strong focus on high quality engineering. Following his vision, our autonomous teams went from monolith to microservices, introduced trunk-based development, upgraded legacy systems and built critical platform tools that will service our R&D for years to come. He is an excellent communicator and a patient listener. His knack for bringing teams together has seen our department overcome many challenges. He introduced OKRs at ELMO to achieve sustained and measurable outcomes. He\'s proven to be a capable, versatile and transformational leader and his tenacity and vision can take any organization to new heights.',
-      image: 'https://media.licdn.com/dms/image/C4D03AQHGfdSopoRs9A/profile-displayphoto-shrink_200_200/0/1516484293739?e=1696464000&v=beta&t=zVpeor38LZMBZbPasiO-LZoeaedEAn9JsTpF9Mw47-I',
+      text: "Dasco has been one of the most influential and inspiring mentors at ELMO. As Head of Engineering, he's overseen a complete transformation of ELMO's R&D department with strong focus on high quality engineering. Following his vision, our autonomous teams went from monolith to microservices, introduced trunk-based development, upgraded legacy systems and built critical platform tools that will service our R&D for years to come. He is an excellent communicator and a patient listener. His knack for bringing teams together has seen our department overcome many challenges. He introduced OKRs at ELMO to achieve sustained and measurable outcomes. He's proven to be a capable, versatile and transformational leader and his tenacity and vision can take any organization to new heights.",
+      image:
+        'https://media.licdn.com/dms/image/C4D03AQHGfdSopoRs9A/profile-displayphoto-shrink_200_200/0/1516484293739?e=1696464000&v=beta&t=zVpeor38LZMBZbPasiO-LZoeaedEAn9JsTpF9Mw47-I',
     },
     {
       name: 'Dinesh Gurram (Head of Engineering)',
       text: 'My career has been closely intertwined with Dasco’s. I’ve worked closely with him in a number of roles over the years and witnessed his growth into an astute, practical and down-to-earth technology leader. He is as comfortable guiding and debating architecture, as he is presenting fearlessly to the C suite, as he is building up talented teams. Definitely one of a kind.',
-      image: 'https://media.licdn.com/dms/image/C5103AQHnee3_0hkr_g/profile-displayphoto-shrink_100_100/0/1552312238708?e=1696464000&v=beta&t=GF2_hhme6ViMoKsowzESfHLmu3BjYnBRsmKMaKVKBHA',
+      image:
+        'https://media.licdn.com/dms/image/C5103AQHnee3_0hkr_g/profile-displayphoto-shrink_100_100/0/1552312238708?e=1696464000&v=beta&t=GF2_hhme6ViMoKsowzESfHLmu3BjYnBRsmKMaKVKBHA',
     },
     {
       name: 'Samuel Sun (CTO)',
       text: 'Dasco has demonstrated exemplary leadership as the Head of Development at ELMO. His expansive knowledge base and profound experience in engineering have been instrumental in delivering tremendous benefits to our team. During the scale-up phase, his significant contributions to research and development have played a crucial role in shaping the direction and success of the company. As an adept and humble leader, Dasco has nurtured and grown a cadre of reliable leaders within the team, fostering an environment of collaboration and excellence. By implementing robust engineering practices and processes, he guided us seamlessly through the critical 1 to N growth phase at ELMO. It was an honour to work alongside him on this journey, witnessing firsthand his impact on our organisation. His leadership continues to resonate as a hallmark of professionalism and innovation.',
-      image: 'https://media.licdn.com/dms/image/C4E03AQEVY4F1WIZsXg/profile-displayphoto-shrink_100_100/0/1516350099420?e=1697068800&v=beta&t=pEy_XeiDGK0LDv3BCaXtg1Z56fDiHD34A9xwLtgRNC0',
+      image:
+        'https://media.licdn.com/dms/image/C4E03AQEVY4F1WIZsXg/profile-displayphoto-shrink_100_100/0/1516350099420?e=1697068800&v=beta&t=pEy_XeiDGK0LDv3BCaXtg1Z56fDiHD34A9xwLtgRNC0',
     },
   ],
 };

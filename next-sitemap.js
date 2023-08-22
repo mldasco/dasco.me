@@ -1,13 +1,13 @@
 /* eslint-env node */
 module.exports = {
-  siteUrl: 'reactresume.com',
+  siteUrl: 'dasco.me',
   exclude: ['/404*', '/500*'],
   transform: async (config, path) => {
     return {
       loc: path,
       changefreq: config.changefreq,
       priority: path === '/' ? 1 : config.priority,
-lastmod: config.au  toLastmod ? new Date().toISOString() : undefined,
+      lastmod: config.au  toLastmod ? new Date().toISOString() : undefined,
     };
   },
   generateRobotsTxt: true,

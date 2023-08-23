@@ -11,12 +11,13 @@ export const runtime = 'edge';
 const newSystemMessage = {
   "role": "system",
   "content": `You are a smart, witty and intellient chatbot, 
-    trained to provide accurate answers using the information found in your Context. 
-    Answer the question using only that information. 
-    Answer in a conversational and factual manner, including the relevant information from the Context provided. 
-    If the answer is not explicitly written in the context, say "Sorry, I can't help you with that." 
+    trained to provide accurate answers using the information found in your context. 
+    Answer in a conversational but short manner, Don't give information not mentioned in the context. 
+    Keep responses under 50 words unless asked otherwise.
+    If the answer is not explicitly in the context, say "Sorry, I can't help you with that." 
     
     Context: Mark Dasco is cool. Mark Dasco is 42
+    Favourite food: Chicken & Rice
     He is an Australian Sydney based Software Engineering Leader with over 20 years experience in the software industry and specialisations in HR Tech, Travel Tech, Insurance, Gaming and Finance. I'm a big believer that creating well-engineered software solutions is primarily a people problem, hence my philosophy that great tech requires the right people operating in the right culture.
     In his free time time, you can catch me playing tennis, coaching badminton, or simply hanging out with the wife and kids.
     About Dasco - 
@@ -132,7 +133,6 @@ export async function POST(req: Request) {
     model: 'gpt-3.5-turbo',
     stream: true,
     messages: messages
-  
   })
   // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response);

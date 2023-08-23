@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Mark Dasco Profile',
-  description: "Mark Dasco's profile page",
+  title: 'About Dasco',
+  description: "Dasco's profile page",
 };
 
 /**

@@ -1,6 +1,7 @@
 //import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
+import {isMobile} from '../../config';
 import {FC, memo, MouseEvent, useCallback, useRef, useState} from 'react';
 
 import {portfolioItems, SectionId} from '../../data/data';
@@ -61,16 +62,18 @@ const linkRef = useRef<HTMLAnchorElement>(null);
     <div>
       <a
         className={classNames(
-          'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 opacity-0 hover:opacity-80 z-50 hover:z-50', 
+          'absolute inset-0 h-full w-full bg-gray-900 transition-all duration-300 opacity-0 hover:opacity-80 z-25 hover:z-25', 
         )}
         onClick={handleMouseOnEnter}
-        onMouseEnter={handleMouseOnEnter}
+        
         
         ref={linkRef}>
       </a>  
     {showModal? (
-      <div className="opacity-100 flex justify-center items-center fixed inset-0 z-50">
-  	    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-2/3 bg-white outline-none focus:outline-none  ">
+      <div className="opacity-100 flex justify-center items-center fixed inset-10 z-50 mx-100">
+  	    <div className={classNames('border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none mx-50',
+          isMobile ? 'w-100' : 'w-2/3',
+        )}>
 	        <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
 		        <h3 className="text-3xl font=semibold">{title}</h3>  
 	        </div>

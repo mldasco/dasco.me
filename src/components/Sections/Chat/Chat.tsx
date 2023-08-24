@@ -2,9 +2,8 @@
 
 import {FC, memo} from 'react';
 
+import ChatArea from './ChatArea';
 import ChatHeader from './ChatHeader';
-import ChatArea from './ChatArea'
-
 import {Accordion, MemoizedAccordionContent, MemoizedAccordionItem, MemoizedAccordionTrigger} from './ui/accordion';
 
 const Chat: FC = memo(() => {

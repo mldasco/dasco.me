@@ -1,7 +1,7 @@
 'use client';
 
-import classNames from 'classnames';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import classNames from 'classnames';
 import {ChevronUp} from 'lucide-react';
 import * as React from 'react';
 

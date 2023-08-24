@@ -1,9 +1,9 @@
 'use client';
 
-import classNames from 'classnames';
 import {useChat} from 'ai/react';
-import {FC, memo,useEffect, useRef} from 'react';
-import {CornerDownLeft} from "lucide-react";
+import classNames from 'classnames';
+import {CornerDownLeft} from 'lucide-react';
+import {FC, memo, useEffect, useRef} from 'react';
 
 const ChatArea: FC = memo(() => {
   const bottomRef = useRef<HTMLDivElement | null>(null);

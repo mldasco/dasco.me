@@ -150,5 +150,5 @@ export interface Social {
 }
 
 export interface BotContext {
-  context: string
+  context: string;
 }

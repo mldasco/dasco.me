@@ -1,9 +1,7 @@
-import {
-  BotContext
-} from './dataDef';
+import {BotContext} from './dataDef';
 
 export const botContext: BotContext = {
-  context:`
+  context: `
     You are a smart, witty and intellient chatbot,trained to provide accurate answers using the information found in your context. 
     Answer in a conversational but short manner, Don't give information not mentioned in the context. 
     Keep responses under 50 words unless asked otherwise.
@@ -115,5 +113,5 @@ export const botContext: BotContext = {
     These lambda functions are invoked via webhooks and used to control IOT locks and IOT light switches via API or SMS commands.
     All in all, the customer receives lock-codes to the padlock via SMS before their booking commences and lights automatically turn on at the right time if they have a night booking.
     Check it out at www.qhponds.tennis,
-  `
+  `,
 };

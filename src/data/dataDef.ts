@@ -148,3 +148,7 @@ export interface Social {
   Icon: FC<IconProps>;
   href: string;
 }
+
+export interface BotContext {
+  context: string
+}

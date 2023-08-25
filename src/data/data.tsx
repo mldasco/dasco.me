@@ -358,19 +358,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Faraz Ali Zuberi (Solutions Architect)',
+      name: 'Faraz Ali Zuberi (Solutions Architect - ELMO Software)',
       text: "Dasco has been one of the most influential and inspiring mentors at ELMO. As Head of Engineering, he's overseen a complete transformation of ELMO's R&D department with strong focus on high quality engineering. Following his vision, our autonomous teams went from monolith to microservices, introduced trunk-based development, upgraded legacy systems and built critical platform tools that will service our R&D for years to come. He is an excellent communicator and a patient listener. His knack for bringing teams together has seen our department overcome many challenges. He introduced OKRs at ELMO to achieve sustained and measurable outcomes. He's proven to be a capable, versatile and transformational leader and his tenacity and vision can take any organization to new heights.",
       image:
         'https://media.licdn.com/dms/image/C4D03AQHGfdSopoRs9A/profile-displayphoto-shrink_200_200/0/1516484293739?e=1696464000&v=beta&t=zVpeor38LZMBZbPasiO-LZoeaedEAn9JsTpF9Mw47-I',
     },
     {
-      name: 'Dinesh Gurram (Head of Engineering)',
+      name: 'Dinesh Gurram (Head of Engineering - Evermed)',
       text: 'My career has been closely intertwined with Dasco’s. I’ve worked closely with him in a number of roles over the years and witnessed his growth into an astute, practical and down-to-earth technology leader. He is as comfortable guiding and debating architecture, as he is presenting fearlessly to the C suite, as he is building up talented teams. Definitely one of a kind.',
       image:
         'https://media.licdn.com/dms/image/C5103AQHnee3_0hkr_g/profile-displayphoto-shrink_100_100/0/1552312238708?e=1696464000&v=beta&t=GF2_hhme6ViMoKsowzESfHLmu3BjYnBRsmKMaKVKBHA',
     },
     {
-      name: 'Samuel Sun (CTO)',
+      name: 'Samuel Sun (CTO - ELMO Software)',
       text: 'Dasco has demonstrated exemplary leadership as the Head of Development at ELMO. His expansive knowledge base and profound experience in engineering have been instrumental in delivering tremendous benefits to our team. During the scale-up phase, his significant contributions to research and development have played a crucial role in shaping the direction and success of the company. As an adept and humble leader, Dasco has nurtured and grown a cadre of reliable leaders within the team, fostering an environment of collaboration and excellence. By implementing robust engineering practices and processes, he guided us seamlessly through the critical 1 to N growth phase at ELMO. It was an honour to work alongside him on this journey, witnessing firsthand his impact on our organisation. His leadership continues to resonate as a hallmark of professionalism and innovation.',
       image:
         'https://media.licdn.com/dms/image/C4E03AQEVY4F1WIZsXg/profile-displayphoto-shrink_100_100/0/1516350099420?e=1697068800&v=beta&t=pEy_XeiDGK0LDv3BCaXtg1Z56fDiHD34A9xwLtgRNC0',

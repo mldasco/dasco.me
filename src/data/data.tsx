@@ -375,6 +375,14 @@ export const testimonial: TestimonialSection = {
       image:
         'https://media.licdn.com/dms/image/C4E03AQEVY4F1WIZsXg/profile-displayphoto-shrink_100_100/0/1516350099420?e=1697068800&v=beta&t=pEy_XeiDGK0LDv3BCaXtg1Z56fDiHD34A9xwLtgRNC0',
     },
+    {
+      name: 'Tiffany Ye (Platform Product Manager)',
+      text: `Working closely with Dasco as a Platform Product Manager, I've consistently admired his exceptional leadership and strong dedication to people and processes.
+      Dasco brings together strategic vision and hands-on technical expertise. He's committed to innovation and streamlined processes, evident in his work on product development and process improvements. He is not afraid to ask tough questions, guiding both product and engineering team to innovate within constraints.
+      Besides his engineering expertise, Dasco excels in focusing on people. He creates a positive work environment, motivating team members and always creating learning opportunities. His mentoring really promotes professional growth and a culture of ongoing improvement.`,
+      image: 'https://media.licdn.com/dms/image/C5603AQFZ9fl4YJoO3A/profile-displayphoto-shrink_100_100/0/1562477748843?e=1698883200&v=beta&t=d0PJY5PyExqtFlu1JZ-YLrLLeKsUBMOolGdkcfktfrw',
+
+    }
   ],
 };
 

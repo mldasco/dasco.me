@@ -1,9 +1,8 @@
-import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
-import {ReactElement} from 'react';
+import 'tailwindcss/tailwind.css';
 
 import type {AppProps} from 'next/app';
-import {memo} from 'react';
+import {memo,ReactElement} from 'react';
 
 const MyApp = memo(({Component, pageProps}: AppProps): ReactElement => {
   return (

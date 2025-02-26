@@ -1,11 +1,10 @@
-//import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useRef, useState} from 'react';
+import { FC, memo, MouseEvent, useCallback, useRef, useState } from 'react';
 
-import {isMobile} from '../../config';
-import {portfolioItems, SectionId} from '../../data/data';
-import {PortfolioItem} from '../../data/dataDef';
+import { isMobile } from '../../config';
+import { portfolioItems, SectionId } from '../../data/data';
+import { PortfolioItem } from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 
@@ -18,7 +17,7 @@ const Portfolio: FC = memo(() => {
         </h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4 ">
           {portfolioItems.map((item, index) => {
-            const {title, image} = item;
+            const { title, image } = item;
             return (
               <div className="pb-6 z-0" key={`${title}-${index}`}>
                 <div
@@ -40,11 +39,11 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, description}}) => {
+const ItemOverlay: FC<{ item: PortfolioItem }> = memo(({ item: { title, description } }) => {
   const [showModal, setShowModal] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
 
-  useDetectOutsideClick(linkRef, () => setShowModal(false));
+  useDetectOutsideClick(linkRef as React.RefObject<HTMLElement>, () => setShowModal(false));
 
   const handleMouseOnEnter = useCallback(
     (event: MouseEvent<HTMLElement>) => {
@@ -55,7 +54,13 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {title, description}
   );
 
   function SplitDescription() {
-    return description.split('\n').map(str => <p className="pt-1">{str}</p>);
+    return (
+      <>
+        {description.split('\n').map((str, index) => (
+          <p key={index} className="pt-1">{str}</p>
+        ))}
+      </>
+    );
   }
 
   return (
